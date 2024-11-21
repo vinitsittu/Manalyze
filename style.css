@@ -1,0 +1,232 @@
+/* Global Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  background: url('assets/yellow-question-mark_23-2149726194.avif') no-repeat center center fixed;
+  background-size: cover;
+  color: #000000;
+  text-align: center;
+  padding: 0;
+  box-sizing: border-box;
+}
+.topdiv{
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  align-items:first baseline;
+}
+.topdiv button{
+  
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #fff;
+  max-width: 150px;
+  max-height: 50px;
+  background: #7300a4;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+
+}
+.topdiv button:hover {
+  background: #0056b3;
+  transform: scale(1.1);
+}
+.topdiv button:focus {
+  outline: none;
+}
+
+#heading {
+  font-size: 40px;
+  text-align: left;
+  font-family: 'Lora', serif;
+  color: #7300a4;
+  padding-left: 80px;
+  margin-top: 20px;
+}
+.content h1{
+  font-size:30px;
+  color: #7300a4;
+  font-family: 'Lora', serif;
+}
+.content p{
+  font-size: 20px;
+  font-style: italic;
+}
+#paragraph {
+  color: black;
+  background-color:rgba(255, 166, 0, 0);
+  font-style: italic;
+  border:none;
+  font-size: 20px;
+  margin-left: 50px;
+  margin-right: 70px;
+  font-weight: 200;
+  text-align: justify;
+  line-height: 1.6;
+}
+
+/* h1, h2, p {
+  margin: 0 0 20px;
+} */
+
+/* Buttons */
+.content button {
+  padding: 10px 20px;
+  font-size: 1.2em;
+  color: #fff;
+  background: #3e7ec4;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.content button:hover {
+  background: #0056b3;
+  transform: scale(1.1);
+}
+
+.content button:focus {
+  outline: none;
+}
+
+/* Section Styling */
+.section {
+  display: flex;
+  
+  margin-bottom: 80px;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s;
+}
+
+.section.visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.hidden {
+  display: none;
+}
+
+
+/* Quiz Options Styling */
+.options {
+  display:flex;
+  flex-direction: column;
+  gap: 15px; /* Added gap for spacing between radio buttons */
+  align-items: flex-start; /* Aligns items to the left */
+  margin-left: 40px; /* Ensures options start at the same position */
+}
+
+.options label {
+  font-size: 1.2em;
+  font-family: 'Roboto', sans-serif;
+  display: flexbox;
+  align-items: center;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.options input[type="radio"] {
+  margin-right: 10px; /* Adds space between radio button and label text */
+  width: 20px;
+  height: 20px;
+  appearance: none; /* Remove default appearance */
+  border-radius: 50%; /* Makes the radio button circular */
+  border: 2px solid #010102;
+  background-color: #fff;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Hover and Checked State for Radio Buttons */
+.options input[type="radio"]:hover {
+  transform: scale(1.2); /* Slightly enlarges the radio button when hovered */
+  border-color: #0056b3; /* Changes border color on hover */
+}
+
+.options input[type="radio"]:checked {
+  background-color: #007bff;
+  border-color: #000000; /* Changes border color when selected */
+}
+
+.options input[type="radio"]:checked + label {
+  color: #000000; /* Change the label color when radio is selected */
+}
+
+/* Disabled Option Styling */
+.options input[type="radio"]:disabled {
+  background-color: #e0e0e0;
+  border-color: #bbb;
+}
+
+/* Result Styles */
+#result img {
+  max-width: 150px;
+  margin: 20px 0;
+  border-radius: 50%;
+}
+
+#result-type {
+  font-family: 'Playfair Display', serif;
+  font-size: 2em;
+  color: #a70fe8;
+}
+
+#result-description {
+  font-style: italic;
+  font-size: 20px;
+  margin-top: 20px;
+  text-align: justify;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Slideshow and content Styling */
+
+
+#quiz, #result {
+  /* padding: 20px; */
+  
+  /* border-radius: 10px; */
+  /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); */
+}
+
+/* Spacing for sections */
+.section .content {
+  text-align: center;
+  max-width: 900px;
+}
+
+#quiz .content, #result .content {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Button Alignment */
+.content button {
+  margin-top: 20px;
+}
+
+#slideshow{
+  display: flex;
+
+}
+#slideshow img{
+  margin: 24px;
+  width: 180px;
+  transition: background 0.3s, transform 0.2s;
+
+
+}
+#slideshow img:hover{
+  transform: scale(1.1);
+}

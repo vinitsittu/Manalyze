@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personality Quiz</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@400;700&family=Lora:wght@400;700&family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topdiv">
+    <h1 id="heading">Welcome To Manalyze</h1>
+    <a href="#startquiz"><button>Click Here</button></a>
+  </div>
+  <pre id="paragraph">
+    Your ultimate destination for exploring and understanding
+    the intricate layers of your personality. 
+    This one-of-a-kind platform is designed exclusively for men,providing
+    a deep dive into the traits, behaviors, and characteristics 
+    that make you unique.
+    At Manalyze, we believe that every individual carries a distinct 
+    blend of qualities that define how they navigate relationships, 
+    challenges, and aspirations.
+    </pre>
+    <div id="slideshow">
+    
+      <img src="assets/result-icons/alpha.jpeg" alt="">
+      <img src="assets/result-icons/beta.jpeg" alt="">
+      <img src="assets/result-icons/delta.jpeg" alt="">
+      <img src="assets/result-icons/gamma.jpeg" alt="">
+      <img src="assets/result-icons/omega.jpeg" alt="">
+      <img src="assets/result-icons/sigma.jpeg" alt="">
+      <img src="assets/result-icons/zeta.jpeg" alt="">
+      
+      
+  
+  
+    </div>
+    
+    
+    
+  <div id="landing" class="section visible">
+    <div class="content">
+      
+      <h1 >Discover Your Personality Type</h1>
+      <p>Are you Alpha, Beta, Sigma, or one of the other personality types? Take this quiz to find out!</p>
+      <div id="slideshow">
+        <img src="" alt="">
+
+      </div>
+      <button id="startquiz" onclick="startQuiz()">Start Quiz</button>
+    </div>
+  </div>
+
+  <div id="quiz" class="section hidden">
+    <div class="content">
+      <h2 id="question-text"></h2>
+      <div id="options" class="options"></div>
+      <button id="next-btn" style="display:list-item;" onclick="nextQuestion()">Next</button>
+    </div>
+  </div>
+
+  <div id="result" class="section hidden">
+    <div class="content">
+      <h1>Your Personality Type: <span id="result-type"></span></h1>
+      <img id="result-img" src="" alt="Personality Icon">
+      <p id="result-description"></p>
+      <button onclick="restartQuiz()">Take Quiz Again</button>
+    </div>
+  </div>
+
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
+
